@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Movie;
 
 class PageController extends Controller
 {
-    public function home(){
+    public function film(){
 
+        $movies = Movie::all();
 
-        return view('home');
+        return view('film', compact('movies'));
     }
 
     public function about(){
