@@ -1,9 +1,6 @@
 {{-- questa view estende il file main.blade.php che è dentro la cartella view/layouts --}}
 @extends('layouts.main')
 
-@section('hero')
-    <div>HERO HOME</div>
-@endsection
 
 @section('content')
 <div class="container my-5">
@@ -19,8 +16,8 @@
 
             <h5 class="card-title">{{$movie->title}}</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">{{$movie->original_title}}</h6>
-            <span class="d-block">{{$movie->date}}</span>
-            <a href="#" class="card-link">Card link</a>
+            <span class="d-block">Data uscita: {{$movie->date}}</span>
+            <a href="{{route('movieDetails', ['id' => $movie->id])}}" class="card-link">Dettagli film</a>
 
             </div>
 
