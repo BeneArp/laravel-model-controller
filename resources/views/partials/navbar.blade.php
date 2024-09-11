@@ -7,6 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link" href="{{ route('film') }}">Film</a>
+            <a class="nav-link" href="{{ route('movieYear') }}">Anni 90 - 2000</a>
             <a class="nav-link" href="{{ route('about') }}">Chi siamo</a>
             <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
         </div>

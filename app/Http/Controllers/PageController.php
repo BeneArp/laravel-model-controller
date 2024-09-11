@@ -27,6 +27,12 @@ class PageController extends Controller
 
         return view('movieDetails', compact('movie'));
     }
+
+    public function movieYear(){
+        $movies = Movie::where('date', '>=', '1990-01-01')->get();
+
+        return view('film', compact('movies'));
+    }
 }
 
 

@@ -22,3 +22,5 @@ Route::get('/chi-siamo', [PageController::class, 'about'])->name('about');
 Route::get('/contatti', [PageController::class, 'contacts'])->name('contacts');
 
 Route::get('/dettagli/{id}', [PageController::class, 'movieDetails'])->name('movieDetails');
+
+Route::get('/anno-film', [PageController::class, 'movieYear'])->name('movieYear');
